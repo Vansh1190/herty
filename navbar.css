@@ -1,0 +1,212 @@
+body{
+    background-color: white;
+}
+
+.navbar-nav li {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+
+
+}
+
+.navbar-nav li button {
+    /* border: 2px solid white; */
+    border: none;
+    background-color: transparent;
+    color: white;
+    border-radius: 0.3em;
+
+    font-size: x-large;
+
+}
+
+.navbar-nav {
+    gap: 15px;
+    align-items: center;
+}
+
+.container-fluid {
+    flex-flow: row-reverse;
+
+}
+
+.offcanvas.offcanvas-end {
+    top: 0;
+    left: -5px;
+    transform: translateX(-99%);
+}
+
+.offcanvas-header {
+    flex-flow: row-reverse;
+    padding: 0px 33px !important;
+}
+
+
+.offcanvas-header .Login{
+--color: rgb(176, 92, 255);
+ font-family: inherit;
+ display: inline-block;
+ padding: 0px 15px;
+ line-height: 2.5em;
+ margin: 20px;
+ position: relative;
+ overflow: hidden;
+ background-color: transparent;
+ border: 2px solid var(--color);
+ transition: color .5s;
+ font-size: 17px;
+ border-radius: 6px;
+ font-weight: 500;
+ color: var(--color);
+}
+.offcanvas-header .Login:hover{
+    color: #fff;
+
+}
+
+.offcanvas-header .Login::before{
+    content: "";
+    width: 220px;
+    height: 100px;
+    background-color: var(--color);
+    position: absolute;
+    z-index: -2;
+    border-radius: 50%;
+    top: 70%;
+    left: 60%;
+
+}
+.offcanvas-header .Login:hover:before{
+    left:-40%;
+    top: -40%;
+    transition-duration: 0.7s;
+}
+
+
+
+
+
+
+.navbar-nav li:hover ::before {
+    content: "";
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    padding: 20px 0;
+    background-color: rgb(176, 92, 255);
+    ;
+    animation-name: bottomBorderAnim;
+    z-index: -2;
+    animation-duration: 0.5s;
+
+    animation-fill-mode: both;
+
+
+}
+
+
+.navbar-nav li:hover {}
+
+@keyframes bottomBorderAnim {
+    0% {
+        transform: translate(-110%, -5%);
+    }
+
+    50% {}
+
+    100% {
+        transform: translate(-50%, -5%);
+    }
+}
+
+
+/* .MenuB */
+.MenuB {
+    background: transparent;
+    border: none;
+}
+
+#checkbox {
+    display: none;
+}
+
+.toggle {
+
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition-duration: .5s;
+    z-index: 5;
+}
+
+.bars {
+    width: 100%;
+    height: 4px;
+    background-color: rgb(176, 92, 255);
+    border-radius: 4px;
+}
+
+#bar2 {
+    transition-duration: .8s;
+}
+
+#bar1,
+#bar3 {
+    width: 70%;
+}
+
+
+
+#checkbox:checked+.toggle {
+
+    transition-duration: .5s;
+    transform: rotate(180deg);
+}
+.mainBackground{
+    filter: brightness(0.5);
+    object-fit: cover;
+}
+.mainHeading h1{
+   
+}
+.navbar-brand{
+    /* position: absolute; */
+    top: 125px;
+    left: 20px;
+    text-shadow: 2px 8px 22px black;
+    font-weight: 900;
+    /* border-bottom: 3px solid rgb(176, 92, 255); ; */
+    box-shadow: inset -1px -6px 1px -4px #b05cff;
+    color: white;
+    padding: 0;
+    font-size: 25px;
+
+}
+.main h2{
+    position: absolute;
+    top: 125px;
+    left: 20px;
+    text-shadow: 2px 2px 22px black;
+    font-weight: 900;
+    /* border-bottom: 3px solid rgb(176, 92, 255); ; */
+    color: white;
+    font-size:3em;
+}
+.main h2 span h3{
+    margin-left: 25px;
+    text-shadow: 6px 5px 6px black;
+    font-weight: 700;
+    color: #b05cff;
+    box-shadow: 8px 7px 6px 1px black;
+}
+
+.navbar-brand span{
+    color: rgb(176, 92, 255);
+}

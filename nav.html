@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav</title>
+    <!-- bootstrap  -->
+      <link rel="icon" href="Static/CC-LOGO-1.png" type="image/icon type">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+
+        <!-- Font  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Montserrat&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+    <style>
+        .w-100{
+            
+    object-fit: cover;
+    height: 632px;
+    padding-bottom: 53px;
+
+        }
+
+
+    .carousel-control-prev-icon {
+        background-image: url(https://png.pngtree.com/png-vector/20190505/ourmid/pngtree-vector-back-icon-png-image_1023353.jpg);
+    filter: invert(1) drop-shadow(2px 6px 16px white);
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 22px;
+    left: 2%;
+    position: fixed;
+
+    }
+    .carousel-control-next-icon {
+        background-image: url(https://png.pngtree.com/png-vector/20190505/ourmid/pngtree-vector-back-icon-png-image_1023353.jpg);
+    filter: invert(1) drop-shadow(2px 6px 16px white);
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 22px;
+    right: 2%;
+    transform: rotate(180deg);
+    opacity: 1;
+    position: fixed;
+
+    }
+    </style>
+
+    
+     <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <img width="50px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/BMW_logo_%28gray%29.svg/2048px-BMW_logo_%28gray%29.svg.png" alt="">
+            <a class="navbar-brand" href="#">Causmic <span>Club </span> </a>
+
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+    aria-label="Toggle navigation">
+    >
+</button> -->
+
+            <button class="MenuB">
+                <input type="checkbox" id="checkbox" class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                <label for="checkbox" class="toggle">
+                    <div class="bars" id="bar1"></div>
+                    <div class="bars" id="bar2"></div>
+                    <div class="bars" id="bar3"></div>
+                </label>
+            </button>
+
+
+
+
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <button class="Login"> Login
+                    </button>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+
+                        <img width="150px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/BMW_logo_%28gray%29.svg/2048px-BMW_logo_%28gray%29.svg.png" alt="">
+
+                        <li>
+                            <button class="bottomBorderAnim"
+                            onclick="window.location.href = 'index.html'"
+                            href="index.html">Home</button>
+                        </li>
+
+                        <li>
+                            <button id="dd" 
+                            onclick="window.location.href = 'Events.html'"
+                            href="Events.html">Events</button>
+                        </li>
+
+                        <!-- <li>
+                        <button href="#"></button>
+                       </li>
+                    -->
+                       <li>
+                        <button href="Our Team">Our Team</button>
+                       </li>
+                        <li>
+                            <button href="www.google.com">Contact Us</button>
+                        </li>
+
+                        <li>
+                            <button href="#">About us</button>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+
+    <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+          <div class="carousel-item active" style="height: 550px;">
+            <img  src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_720/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/ype8x0zkqbv239asgx9p/IMGWorldsofAdventureTicketinDubai.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item active" style="height: 550px;">
+            <img  src="https://media.tacdn.com/media/attractions-splice-spp-674x446/09/c3/33/97.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item active" style="height: 550px;">
+            <img  src="https://images.unsplash.com/photo-1508919801845-fc2ae1bc2a28?400x800=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aW1nfGVufDB8fDB8fA%3D%3D&w=1000&q=80" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"  data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    </div>
+
+    
+</body>
+</html>
